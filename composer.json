@@ -1,0 +1,33 @@
+{
+  "name": "bugraguney/laravel-docker",
+  "type": "library",
+  "description": "Laravel için Docker compose",
+  "keywords": ["Laravel","Docker","Laravel Docker","Laravel Docker Compose"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Buğra Güney",
+      "email": "bgrgny@gmail.com",
+      "homepage": "https://bugraguney.com.tr",
+      "role": "Software Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "illuminate/console": "~5.7.11",
+    "illuminate/support": "~5.7.11"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "bugraguney\\laraveldocker\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "bugraguney\\laraveldocker\\ServiceProvider"
+      ]
+    }
+  }
+}
